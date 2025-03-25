@@ -1,0 +1,28 @@
+@use './util' as u;
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__avatar {
+    width: 90px;
+    height: 90px;
+    margin-bottom: u.rem(24);
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-bottom: u.rem(4);
+    font-size: u.rem(24);
+    font-weight: 500;
+  }
+
+  &__location {
+    margin-bottom: u.rem(24);
+    font-weight: 600;
+    color: var(--clr-secondary);
+  }
+}

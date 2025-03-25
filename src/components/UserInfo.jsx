@@ -1,3 +1,5 @@
+import '../styles/scss/UserInfo.scss';
+
 export default function UserInfo() {
   return (
     <section className='user-info'>
