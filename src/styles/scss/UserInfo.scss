@@ -25,4 +25,9 @@
     font-weight: 600;
     color: var(--clr-secondary);
   }
+
+  &__description {
+    margin-bottom: u.rem(20);
+    font-weight: 300;
+  }
 }
