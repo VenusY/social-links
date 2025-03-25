@@ -6,28 +6,28 @@ export default function Links() {
         target='_blank'
         className='links-section__link'
       >
-        My website
+        <span>My website</span>
       </a>
       <a
         href='https://github.com/VenusY'
         target='_blank'
         className='links-section__link'
       >
-        GitHub
+        <span>GitHub</span>
       </a>
       <a
         href='https://www.frontendmentor.io/profile/VenusY'
         target='_blank'
         className='links-section__link'
       >
-        Frontend Mentor
+        <span>Frontend Mentor</span>
       </a>
       <a
         href='https://www.linkedin.com/in/venus-yip-869aa4217/'
         target='_blank'
         className='links-section__link'
       >
-        LinkedIn
+        <span>LinkedIn</span>
       </a>
     </div>
   );
