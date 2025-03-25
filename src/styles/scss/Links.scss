@@ -1,0 +1,66 @@
+@use './util' as u;
+
+.links-section {
+  &__link {
+    --duration: 200ms;
+
+    position: relative;
+    padding: 12px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    transition-property: color, transform;
+    transition-duration: var(--duration);
+    transition-timing-function: ease-in-out;
+
+    & > * {
+      // Allows text to appear above the pseudo-elements
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transition-duration: var(--duration);
+      transition-timing-function: ease-in-out;
+    }
+
+    &::before {
+      left: 0;
+      background: var(--bg-tertiary);
+      transition-property: left;
+    }
+
+    &::after {
+      right: 100%;
+      background: var(--clr-secondary);
+      transition-property: right;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: u.rem(16);
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--bg-secondary);
+      transform: scale(1.05);
+
+      &::before {
+        left: 100%;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+  }
+}

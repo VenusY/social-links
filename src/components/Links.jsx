@@ -1,3 +1,5 @@
+import '../styles/scss/Links.scss';
+
 export default function Links() {
   return (
     <div className='links-section'>
