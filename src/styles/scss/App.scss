@@ -6,12 +6,14 @@
 
 :root {
   --clr-primary: #f0f0ff;
-  --clr-accent-primary: #9bffed;
+  --clr-secondary: #9bffed;
   --bg-primary: #17171e;
   --bg-secondary: #1e1e28;
 }
 
 body {
   min-height: 100vh;
+  background: var(--bg-primary);
   font-family: 'Inter';
+  color: var(--clr-primary);
 }
