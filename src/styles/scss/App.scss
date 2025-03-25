@@ -20,3 +20,9 @@ body {
   font-family: 'Inter';
   color: var(--clr-primary);
 }
+
+.card {
+  padding: 24px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+}
