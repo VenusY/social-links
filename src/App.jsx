@@ -1,3 +1,4 @@
+import './styles/reset.css';
 import UserInfo from './components/UserInfo';
 import Links from './components/Links';
 
